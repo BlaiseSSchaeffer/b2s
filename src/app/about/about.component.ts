@@ -27,6 +27,7 @@ export class AboutComponent implements OnInit {
     new Image('/assets/images/react.png', 'react'),
     new Image('/assets/images/redux.png', 'redux'),
     new Image('/assets/images/slack.png', 'slack'),
+    new Image('/assets/images/dev-tools.png', 'dev-tools'),
     new Image('/assets/images/java.png', 'java'),
     new Image('/assets/images/sql.png', 'sql'),
     new Image('/assets/images/db2.png', 'db2'),

@@ -1,11 +1,26 @@
 <div class="about-container">
+  <div class="low-down" fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="0px">
+    <div fxFlex="0 1 auto">
+      <h2>The Low Down</h2>
+    </div>
+  </div>
+  <div class="skills--content" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="0px">
+    <div fxFlex="0 1 25%" fxFlex.lt-sm="0 1 50%">
+      Hello
+    </div>
+  </div>
+  <div class="interests" fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="0px">
+    <div fxFlex="0 1 auto">
+      <h2>Interests</h2>
+    </div>
+  </div>
   <div class="skills" fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="0px">
     <div fxFlex="0 1 auto">
       <h2>Skills</h2>
     </div>
   </div>
   <div class="skills--content" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="0px">
-    <div *ngFor="let skillsImage of skillsImages" fxFlex="0 1 25%" fxFlex.lt-sm="0 1 100%">
+    <div *ngFor="let skillsImage of skillsImages" fxFlex="0 1 25%" fxFlex.lt-sm="0 1 50%">
       <img class="skills--image" [src]="skillsImage.src" [alt]="skillsImage.altText">
     </div>
   </div>
