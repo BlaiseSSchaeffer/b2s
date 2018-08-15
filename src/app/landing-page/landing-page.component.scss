@@ -1,5 +1,8 @@
+@import '~src/assets/styles/global';
+
 .landing-page-container {
-    height: 100%;
+    // height: 100%;
+    @extend .content-height-sub-header;
     background-image: url(/assets/images/abandoned-forest.jpg);
     background-size: cover;
     background-position: center;

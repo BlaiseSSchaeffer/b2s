@@ -40,26 +40,26 @@ export class NavbarComponent implements OnInit {
   }
 
   applyLandingPageStyleChanges() {
-    _.forEach(this.landingPageStyleChanges, (styleChange: { style: string, value: string }) => {
-      this.renderer.setStyle(this.navbarEl.nativeElement, styleChange.style, styleChange.value);
-    });
+    // _.forEach(this.landingPageStyleChanges, (styleChange: { style: string, value: string }) => {
+    //   this.renderer.setStyle(this.navbarEl.nativeElement, styleChange.style, styleChange.value);
+    // });
   }
 
   removeLandingPageStyleChanges() {
-    _.forEach(this.landingPageStyleChanges, (styleChange: { style: string, value: string }) => {
-      this.renderer.removeStyle(this.navbarEl.nativeElement, styleChange.style);
-    });
+    // _.forEach(this.landingPageStyleChanges, (styleChange: { style: string, value: string }) => {
+    //   this.renderer.removeStyle(this.navbarEl.nativeElement, styleChange.style);
+    // });
   }
 
   onMouseover() {
-    if (this.router.url === '/') {
-      this.renderer.removeStyle(this.navbarEl.nativeElement, 'opacity');
-    }
+    // if (this.router.url === '/') {
+    //   this.renderer.removeStyle(this.navbarEl.nativeElement, 'opacity');
+    // }
   }
 
   onMouseleave() {
-    if (this.router.url === '/') {
-      this.renderer.setStyle(this.navbarEl.nativeElement, 'opacity', '.33');
-    }
+    // if (this.router.url === '/') {
+    //   this.renderer.setStyle(this.navbarEl.nativeElement, 'opacity', '.33');
+    // }
   }
 }
