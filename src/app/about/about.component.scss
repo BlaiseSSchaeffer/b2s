@@ -1,0 +1,17 @@
+@import '~src/assets/styles/global';
+
+.about-container {
+    @extend .content-height-sub-header;
+    overflow: auto;
+}
+
+.skills {
+    &--content {
+        text-align: center;
+    }
+
+    &--list {
+        list-style-type: none;
+        padding: 0;
+    }
+}
